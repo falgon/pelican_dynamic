@@ -69,7 +69,7 @@ def add_tags(gen, metadata):
         metadata['styles'] = format_resource(gen, metadata['styles'], style)
 
     if 'd3' in metadata.keys():
-        d3_script = '<script src="https://d3js.org/d3.v3.min.js"></script>'
+        d3_script = '<script src="https://d3js.org/d3.v5.min.js"></script>'
         metadata['scripts'].insert(0, d3_script)
 
 def move_resources(gen):
